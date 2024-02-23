@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(148, 136, 136);
+}
+
+.container {
+  max-width: 85%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #121010;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding: 5px;
+}
+.card {
+  position: relative;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  /* cursor: pointer; */
+  color: black;
+  transition: background-color 0.5s ease;
+}
+.card:hover {
+  background-color: #e0e0e0;
+}
+
+.selector {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  font-size: 14px;
+  border: 14px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: #6db5c6;
+  margin-left: 10px;
+}
+.selector::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+.selector option {
+  background-color: #c2c6c7;
+  color: #333;
+}
+
+.selector option[value="delete"] {
+  color: red;
+}
+
+.board h2 {
+  text-align: center;
+}
+
+.column {
+  width: 30%;
+  min-height: 500px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(116, 93, 93);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#addCard {
+  height: 40px;
+  width: 90px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(38, 172, 38);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#addCard:hover {
+  background-color: #0a7912;
+}
